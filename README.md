@@ -55,7 +55,7 @@ Once you have your virtual environment activated then you can install `Jupyter` 
 # Install jupyter python package from requirements file
 pip install -r requirements.txt
 
-# Install nbextensions manually$^*$
+# Install nbextensions manually [1]
 pip install https://github.com/ipython-contrib/IPython-notebook-extensions/archive/master.zip
 
 # Start Jupyter notebook
@@ -63,7 +63,7 @@ jupyter notebook
 # It should open a web page on your browser on http://localhost:8888/tree
 ```
 
-$^*$ To enable extensions such as `spell-checker` go to http://localhost:8888/nbextensions and activate the extensions.
+[1] To enable extensions such as `spell-checker` go to http://localhost:8888/nbextensions and activate the extensions.
 
 
 ## Github
