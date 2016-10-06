@@ -32,6 +32,9 @@ python -m venv venv
 
 ### For Linux/OSX
 ```shell
+# Download and install the desired version of python for your machine
+https://www.python.org/downloads/
+
 # Move to the repository you just cloned with Github Desktop
 cd ~\Github\[the-repository-name]
 
@@ -55,11 +58,13 @@ pip install -r requirements.txt
 # Install nbextensions manually
 pip install https://github.com/ipython-contrib/IPython-notebook-extensions/archive/master.zip
 
+To enable extensions such as `spell-checker` go to http://localhost:8888/nbextensions and activate the extensions.
+
 # Start Jupyter notebook
 jupyter notebook
 # It should open a web page on your browser on http://localhost:8888/tree
 ```
-To enable extensions such as `spell-checker` go to http://localhost:8888/nbextensions and activate the extensions.
+
 
 ## Github
 At this point, you should be able to work on documents through Jupyter in your browsers. Once you are done with that, you need to create a `branch` to `commit` your changes and create a `pull-request`. Don't worry about all those terms. We are going to cover each of those in sections below.
