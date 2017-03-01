@@ -56,7 +56,10 @@ Once you have your virtual environment activated then you can install `Jupyter` 
 pip install -r requirements.txt
 
 # Install nbextensions manually [1]
-pip install https://github.com/ipython-contrib/IPython-notebook-extensions/archive/master.zip
+pip install https://github.com/ipython-contrib/IPython-notebook-extensions/archive/master.zi
+
+# Enable nbextensions configurator, so we can access it through jupyter notebook
+jupyter nbextensions_configurator enable --user
 
 # Start Jupyter notebook
 jupyter notebook
