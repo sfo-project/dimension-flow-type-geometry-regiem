@@ -55,8 +55,9 @@ Once you have your virtual environment activated then you can install `Jupyter` 
 # Install jupyter python package from requirements file
 pip install -r requirements.txt
 
-# Install spell-check (and other necessary) nbextensions manually [1]
-jupyter nbextension install https://github.com/Calysto/notebook-extensions/archive/master.zip
+# Install and enable spell-check (and other necessary) nbextensions manually [1]
+ipython install-nbextension https://bitbucket.org/ipre/calico/downloads/calico-spell-check-1.0.zip
+jupyter nbextension enable calico-spell-check
 
 # Enable nbextensions configurator, so we can access it through jupyter notebook
 jupyter nbextensions_configurator enable --user
