@@ -55,19 +55,17 @@ Once you have your virtual environment activated then you can install `Jupyter` 
 # Install jupyter python package from requirements file
 pip install -r requirements.txt
 
-# Install nbextensions manually [1]
-pip install https://github.com/ipython-contrib/IPython-notebook-extensions/archive/master.zi
+# Install spell-check (and other necessary) nbextensions manually [1]
+jupyter nbextension install https://github.com/Calysto/notebook-extensions/archive/master.zip
 
 # Enable nbextensions configurator, so we can access it through jupyter notebook
 jupyter nbextensions_configurator enable --user
 
 # Start Jupyter notebook
 jupyter notebook
-# It should open a web page on your browser on http://localhost:8888/tree
+# It should open a web page on your browser on http://localhost:8888/tree (on Linux)
+# It should open a web page on your browser on http://localhost:8890/tree/ (on Windows)
 ```
-
-[1] To enable extensions such as `spell-checker` go to http://localhost:8888/nbextensions and activate the extensions.
-
 
 ## Github
 At this point, you should be able to work on documents through Jupyter in your browsers. Once you are done with that, you need to create a `branch` to `commit` your changes and create a `pull-request`. Don't worry about all those terms. We are going to cover each of those in sections below.
